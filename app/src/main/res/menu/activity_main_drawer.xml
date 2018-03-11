@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item android:id="@+id/nav_item_account"
+            android:title="My Account" />
+        <item android:id="@+id/nav_item_mart"
+            android:title="ETA Mart" />
+        <item android:id="@+id/nav_item_video"
+            android:title="ETA Video" />
+        <item android:id="@+id/nav_item_event"
+            android:title="ETA Event" />
+        <item android:id="@+id/nav_item_komunitas"
+            android:title="ETA Komunitas" />
+        <item android:id="@+id/nav_item_status"
+            android:title="Status Pembelian" />
+        <item android:id="@+id/nav_item_help"
+            android:title="Help" />
+        <item android:id="@+id/nav_item_logout"
+            android:title="Logout" />
+    </group>
+
+
+
+
+</menu>
