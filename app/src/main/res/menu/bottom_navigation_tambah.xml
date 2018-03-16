@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/action_home"
+        android:icon="@drawable/ic_home"
+        app:showAsAction="always"
+        android:title="Beranda" />
+
+    <item
+        android:id="@+id/action_kembali"
+        android:icon="@drawable/ic_kembali"
+        app:showAsAction="always"
+        android:title="Kembali" />
+    <item
+        android:id="@+id/action_lanjut"
+        android:icon="@drawable/ic_lanjut"
+        app:showAsAction="always"
+        android:title="Lanjut"/>
+
+
+</menu>

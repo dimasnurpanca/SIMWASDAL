@@ -17,7 +17,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:tint="@color/warnaDark"
-        android:src="@drawable/logo"
+        android:src="@drawable/logos"
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
         android:layout_gravity="center"/>

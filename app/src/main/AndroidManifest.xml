@@ -31,6 +31,12 @@
         <activity
             android:name="com.dnp.wasdal.ui.HomeActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.dnp.wasdal.ui.TambahActivity" android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName="com.dnp.wasdal.ui.HomeActivity" android:windowSoftInputMode="stateAlwaysHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dnp.wasdal.ui.HomeActivity" />
+        </activity>
     </application>
 
 </manifest>
