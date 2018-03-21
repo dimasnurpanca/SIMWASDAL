@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.TambahActivity"
+    tools:showIn="@layout/activity_tambah" >
+
+
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+                <!-- Title Label -->
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pertanahan (Grounding) :"
+                        android:textColorHint="@color/primary_text"
+                        android:textSize="18sp" />
+                    <RadioGroup
+                        android:id="@+id/radio_pertanahan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin">
+
+
+
+                        <RadioButton
+                            android:id="@+id/radioPertanahanAda"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Ada" />
+
+                        <RadioButton
+                            android:id="@+id/radioPertanahanTidak"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tidak" />
+
+
+                    </RadioGroup>
+                </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Penangkal Petir :"
+                        android:textColorHint="@color/primary_text"
+                        android:textSize="18sp" />
+                    <RadioGroup
+                        android:id="@+id/radio_penangkal_petir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin">
+
+
+
+                        <RadioButton
+                            android:id="@+id/radioPenangkalAda"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Ada" />
+
+                        <RadioButton
+                            android:id="@+id/radioPenangkalTidak"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tidak" />
+
+
+                    </RadioGroup>
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Catu Daya :"
+                        android:textColorHint="@color/primary_text"
+                        android:textSize="18sp" />
+                    <RadioGroup
+                        android:id="@+id/radio_catu_daya"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin">
+
+                        <RadioButton
+                            android:id="@+id/radioCatuAda"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Ada" />
+
+                        <RadioButton
+                            android:id="@+id/radioCatuTidak"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tidak" />
+                    </RadioGroup>
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lampu Halangan Penerbangan :"
+                    android:textColorHint="@color/primary_text"
+                    android:textSize="18sp" />
+                <RadioGroup
+                    android:id="@+id/radio_lampu_halangan_penerbangan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin">
+
+                    <RadioButton
+                        android:id="@+id/radioLampuAda"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Ada" />
+
+                    <RadioButton
+                        android:id="@+id/radioLampuTidak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tidak" />
+                </RadioGroup>
+            </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Marka Halangan Penerbangan :"
+                        android:textColorHint="@color/primary_text"
+                        android:textSize="18sp" />
+                    <RadioGroup
+                        android:id="@+id/radio_marka_halangan_penerbangan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin">
+
+                        <RadioButton
+                            android:id="@+id/radioMarkaAda"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Ada" />
+
+                        <RadioButton
+                            android:id="@+id/radioMarkaTidak"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tidak" />
+                    </RadioGroup>
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kelistrikan :"
+                        android:textColorHint="@color/primary_text"
+                        android:textSize="18sp" />
+                    <RadioGroup
+                        android:id="@+id/radio_kelistrikan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin">
+
+                        <RadioButton
+                            android:id="@+id/radioKelistrikanPLN"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="PLN" />
+
+                        <RadioButton
+                            android:id="@+id/radioKelistrikanGenset"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Genset" />
+                        <RadioButton
+                            android:id="@+id/radioKelistrikanPLNGenset"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PLN &amp; Genset" />
+                    </RadioGroup>
+                </android.support.design.widget.TextInputLayout>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+    <EditText android:id="@+id/input_pertanahan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/primary_text"
+        android:textColorHighlight="@color/primary_text"
+        android:text="Ada"
+        android:visibility="invisible"/>
+    <EditText android:id="@+id/input_penangkal_petir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/primary_text"
+        android:textColorHighlight="@color/primary_text"
+        android:text="Ada"
+        android:visibility="invisible"/>
+    <EditText android:id="@+id/input_catu_daya"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/primary_text"
+        android:textColorHighlight="@color/primary_text"
+        android:text="Ada"
+        android:visibility="invisible"/>
+    <EditText android:id="@+id/input_lampu_halangan_penerbangan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/primary_text"
+        android:textColorHighlight="@color/primary_text"
+        android:text="Ada"
+        android:visibility="invisible"/>
+    <EditText android:id="@+id/input_marka_halangan_penerbangan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/primary_text"
+        android:textColorHighlight="@color/primary_text"
+        android:text="Ada"
+        android:visibility="invisible"/>
+    <EditText android:id="@+id/input_kelistrikan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/primary_text"
+        android:textColorHighlight="@color/primary_text"
+        android:text="PLN"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

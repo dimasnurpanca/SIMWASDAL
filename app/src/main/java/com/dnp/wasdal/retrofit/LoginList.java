@@ -12,6 +12,10 @@ public class LoginList {
     @Expose
     public String status;
 
+    @SerializedName("id")
+    @Expose
+    public String id;
+
     @SerializedName("username")
     @Expose
     public String username;

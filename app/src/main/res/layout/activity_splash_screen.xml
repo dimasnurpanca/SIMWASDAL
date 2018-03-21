@@ -3,7 +3,7 @@
    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00AF50"
+    android:background="@drawable/indramayubackground"
     tools:context="com.dnp.wasdal.ui.SplashScreenActivity">
 
 
@@ -16,7 +16,7 @@
         android:layout_gravity="center"
         android:scaleType="center"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_marginTop="80dp"
         android:shadowColor="#cf1d1d"
         android:shadowDx="0.0"
         android:shadowDy="0.0"
@@ -24,21 +24,23 @@
         android:textStyle="bold"
         android:src="@drawable/logo"/>
 
+
     <TextView
         android:layout_below="@id/textView1"
-        android:id="@+id/textView3"
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:textAlignment="center"
-        android:text="DINAS KOMUNIKASI DAN INFORMATIKA KABUPATEN INDRAMAYU"
+        android:layout_marginTop="20dp"
+        android:text="DNP - Demo Version"
         android:textColor="#FFF"
         android:shadowColor="#cf1d1d"
         android:shadowDx="0.0"
         android:shadowDy="0.0"
         android:shadowRadius="8"
-        android:textSize="13dp"
+        android:textSize="15dp"
         android:textStyle="bold"/>
 
 

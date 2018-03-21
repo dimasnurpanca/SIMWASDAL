@@ -11,6 +11,9 @@ import com.google.gson.annotations.SerializedName;
 
 public class UserList {
 
+    @SerializedName("id")
+    @Expose
+    public String id;
 
     @SerializedName("username")
     @Expose
@@ -30,7 +33,8 @@ public class UserList {
     public String android_id;
 
 
-    public UserList(String username, String email, String role, String aktif, String android_id) {
+    public UserList(String id, String username, String email, String role, String aktif, String android_id) {
+        this.id = id;
         this.username = username;
         this.email = email;
         this.role = role;
@@ -38,6 +42,9 @@ public class UserList {
         this.android_id = android_id;
     }
 
+    public String getId() {
+        return id;
+    }
     public String getUsername() {
         return username;
     }

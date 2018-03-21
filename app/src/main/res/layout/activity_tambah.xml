@@ -25,19 +25,39 @@
 
     <include
         android:visibility="visible"
+        android:id="@+id/var_content_tambah_satu"
         layout="@layout/content_tambah_satu" />
+    <include
+        android:visibility="invisible"
+        android:id="@+id/var_content_tambah_dua"
+        layout="@layout/content_tambah_dua" />
+
+    <include
+        android:visibility="invisible"
+        android:id="@+id/var_content_tambah_tiga"
+        layout="@layout/content_tambah_tiga" />
+
+    <include
+        android:visibility="invisible"
+        android:id="@+id/var_content_tambah_empat"
+        layout="@layout/content_tambah_empat" />
+
+    <include
+        android:visibility="invisible"
+        android:id="@+id/var_content_tambah_lima"
+        layout="@layout/content_tambah_lima" />
 
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/bottom_navigation"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:layout_alignParentBottom="true"
         app:itemBackground="@drawable/background_bottomview"
         app:itemIconTint="@drawable/state_bottom_nv"
         app:itemTextColor="@drawable/state_bottom_nv"
-        app:menu="@menu/bottom_navigation_items_tambah" />
+        app:menu="@menu/bottom_navigation_tambah" />
 
 
 </android.support.design.widget.CoordinatorLayout>

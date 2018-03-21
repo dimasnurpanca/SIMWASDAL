@@ -21,8 +21,8 @@
     <color name="red_background">#FFFF4444</color>
     <color name="green_background">#99cc00</color>
     <color name="iron">#CCCCCC</color>
-    <color name="warnaDark">#228B22</color>
-    <color name="warnaLight">#00AF50</color>
+    <color name="warnaDark">#505798</color>
+    <color name="warnaLight">#007CBF</color>
     <color name="warnaBiru">#09233C</color>
 
     //BottomView

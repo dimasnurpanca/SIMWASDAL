@@ -12,13 +12,12 @@ import android.view.WindowManager;
 import android.widget.TextView;
 
 import com.dnp.wasdal.R;
+import com.facebook.login.Login;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class SplashScreenActivity extends AppCompatActivity {
-    @BindView(R.id.textView3)
-    TextView textView3;
     final android.os.Handler  handler = new android.os.Handler();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,8 +25,6 @@ public class SplashScreenActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash_screen);
         ButterKnife.bind(this);
 
-        Typeface typeface = Typeface.createFromAsset(getAssets(), "fonts/coolvetica.ttf");
-        textView3.setTypeface(typeface);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
 
@@ -36,12 +33,12 @@ public class SplashScreenActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
                 finish();
 
             }
         };
-        handler.postDelayed(runnable,1000);
+        handler.postDelayed(runnable,10000);
 
 
     }

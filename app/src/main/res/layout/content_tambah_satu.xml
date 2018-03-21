@@ -33,8 +33,7 @@
                 android:orientation="vertical"
                 android:paddingBottom="@dimen/activity_vertical_margin"
                 android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin">
+                android:paddingRight="@dimen/activity_horizontal_margin">
                 <!-- Title Label -->
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
@@ -49,6 +48,43 @@
                         android:focusable="false"
                         android:gravity="center"
                         android:hint="Nama Pemilik"
+                        android:textColor="@color/primary_text"
+                        android:textColorHighlight="@color/primary_text"
+                        android:textColorHint="@color/primary_text" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp">
+
+                    <EditText
+                        android:id="@+id/input_nama_site"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:gravity="center"
+                        android:hint="Nama Site"
+                        android:textColor="@color/primary_text"
+                        android:textColorHighlight="@color/primary_text"
+                        android:textColorHint="@color/primary_text" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp">
+
+                    <EditText
+                        android:id="@+id/input_tahun"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:maxLength="4"
+                        android:gravity="center"
+                        android:hint="Tahun"
                         android:textColor="@color/primary_text"
                         android:textColorHighlight="@color/primary_text"
                         android:textColorHint="@color/primary_text" />
@@ -91,7 +127,21 @@
 
                     </RadioGroup>
                 </android.support.design.widget.TextInputLayout>
-
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp">
+                    <EditText
+                        android:id="@+id/input_alamat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="Alamat"
+                        android:textColor="@color/primary_text"
+                        android:textColorHighlight="@color/primary_text"
+                        android:textColorHint="@color/primary_text" />
+                </android.support.design.widget.TextInputLayout>
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -122,7 +172,7 @@
                         android:layout_height="wrap_content"
                         android:focusable="false"
                         android:gravity="center"
-                        android:hint="Kecataman"
+                        android:hint="Kecamatan"
                         android:textColor="@color/primary_text"
                         android:textColorHighlight="@color/primary_text"
                         android:textColorHint="@color/primary_text" />
@@ -214,7 +264,7 @@
         android:textColor="@color/primary_text"
         android:textColorHint="@color/primary_text"
         android:textColorHighlight="@color/primary_text"
-        android:text="0"
+        android:text=""
         android:visibility="invisible"/>
     <EditText android:id="@+id/input_kategori"
         android:layout_width="match_parent"
@@ -223,6 +273,42 @@
         android:textColor="@color/primary_text"
         android:textColorHint="@color/primary_text"
         android:textColorHighlight="@color/primary_text"
-        android:text="0"
+        android:text="BTS"
+        android:visibility="invisible"/>
+    <EditText android:id="@+id/input_kelurahan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/primary_text"
+        android:textColorHighlight="@color/primary_text"
+        android:text=""
+        android:visibility="invisible"/>
+    <EditText android:id="@+id/input_kecamatan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/primary_text"
+        android:textColorHighlight="@color/primary_text"
+        android:text=""
+        android:visibility="invisible"/>
+    <EditText android:id="@+id/input_papan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/primary_text"
+        android:textColorHighlight="@color/primary_text"
+        android:text="Ada"
+        android:visibility="invisible"/>
+    <EditText android:id="@+id/input_kawasan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/primary_text"
+        android:textColorHighlight="@color/primary_text"
+        android:text=""
         android:visibility="invisible"/>
 </RelativeLayout>
